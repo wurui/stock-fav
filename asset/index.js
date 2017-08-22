@@ -1,5 +1,5 @@
 define(['oxjs', './search-suggest'],function(OX, SearchSuggest){
-    
+
   return {
     init:function($mod){
         var lastLi = null;
@@ -30,7 +30,7 @@ define(['oxjs', './search-suggest'],function(OX, SearchSuggest){
         };
         SearchSuggest.init(searchInput.on('filled:suggest', function () {
             var symbol = searchInput.val();
-            favRest.del({tid:symbol},afterSave)
+            favRest.post({tid:symbol},afterSave)
 
         }))
 
