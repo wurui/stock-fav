@@ -1,3 +1,60 @@
-.oxmod-stock-fav{
-/* CSS */
- }
+.oxmod-stock-fav {
+  /* CSS */
+}
+.oxmod-stock-fav ul {
+  width: 100%;
+  overflow: hidden;
+}
+.oxmod-stock-fav .searchbar {
+  padding: 10px;
+  text-align: center;
+}
+.oxmod-stock-fav .searchbar > input {
+  width: 90%;
+  height: 30px;
+  border: solid 1px #f1f1f1;
+  padding: 2px 5px;
+}
+.oxmod-stock-fav .rel-list {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  border-bottom: solid 1px #f1f1f1;
+}
+.oxmod-stock-fav .bt-del {
+  background-color: red;
+  height: 100%;
+  border: none;
+  width: 50px;
+  color: #fff;
+  float: right;
+  margin-right: -50px;
+  transition: all .3s;
+}
+.oxmod-stock-fav .show-del .bt-del {
+  margin-right: 0px;
+}
+.oxmod-stock-fav .suggest {
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: 14px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  padding: 5px 0;
+}
+.oxmod-stock-fav .suggest li {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: solid 1px #f1f1f1;
+  color: #666;
+  text-align: left;
+  margin: 0 5px;
+}
+.oxmod-stock-fav .suggest li:last-child {
+  border-bottom: none;
+}
+.oxmod-stock-fav .suggest li:hover {
+  color: #333;
+  background-color: #eee;
+}
