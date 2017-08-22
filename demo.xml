@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+            <stock-analysis>
+        <i>
+            <symbol>
+                screen
+            </symbol>
+            <close>
+                4645.64
+            </close>
+            <med>
+                347.68
+            </med>
+            <avg>
+                1082.03
+            </avg>
+        </i>
+    </stock-analysis>
+    </data>
+</root>

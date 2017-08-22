@@ -1,0 +1,6 @@
+{
+  "name": "stock-fav",
+  "version": "0.0.1",
+  "apiDependencies": ["stock-analysis"]
+}
+
