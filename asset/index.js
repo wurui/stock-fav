@@ -4,7 +4,7 @@ define(['oxjs', './search-suggest'],function(OX, SearchSuggest){
     init:function($mod){
         var lastLi = null;
         var uid=$mod.attr('data-uid');
-        var favRest=OX.useREST('fav/1111222233334444/u/'+encodeURIComponent(uid))
+        var favRest=OX.useREST('fav').setDevHost('http://dev.openxsl.com/')
 
         $mod.on('swipeLeft', 'li', function () {
             lastLi = $(this).addClass('show-del')
@@ -24,7 +24,7 @@ define(['oxjs', './search-suggest'],function(OX, SearchSuggest){
 
         var afterSave = function (r) {
             if(r && r.code==0){
-                location.reload();
+               // location.reload();
             }
             //location.reload(true);
         };

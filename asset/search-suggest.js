@@ -1,10 +1,10 @@
 define(['oxjs','mustache'], function (OX,Mustache) {
     var tpl='<ul>{{#data}}<li>{{symbol}}</li>{{/data}}</ul>';
-
+    var rest=OX.useREST('stock').setDevHost('http://dev.openxsl.com/');
     var ajax = function (wd,fn) {
         //OX.getJSON('http://momofox.com:8000/company/querysymbol?wd='+wd,fn)
         if(!wd)return fn();
-        OX.useREST('stock/1111222233334444/ref/'+wd).get(fn)
+        rest.search({key:wd},fn)
     };
     return {
         init: function (searchInput) {
